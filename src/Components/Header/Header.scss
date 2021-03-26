@@ -1,0 +1,52 @@
+@import "../../helpersSCSS/Container";
+
+.header {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+
+  .header__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+
+    @extend .container
+  }
+
+  .header__logo {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .nav__menu {
+  }
+
+  .nav__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    font-weight: 500;
+
+    transition: opacity .2s linear;
+    opacity: 0.75;
+    padding: 0 10px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+
+}

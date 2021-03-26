@@ -1,69 +1,130 @@
-%border_bot {
-  font-size: 90px;
-  border-bottom: 10px solid green;
+@import "helpersSCSS/null";
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  border: 0;
+  padding: 0 15px;
 }
 
-@mixin fontEasy($f, $d) {
-
-  font-size: $f;
-  color: $d;
-}
-
-.border_bottom {
-  font-size: 90px;
-  border-bottom: 10px solid green;
-}
-
-.App {
-  text-align: center;
-  background-color: white;
-
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  width: 600 / 1200 * 100%;
-
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 685px) {
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-
-  p {
-   @include fontEasy(100px, red)
-  }
-
-  @extend .border_bottom
+.team__container {
+  min-height: 1000px;
+  padding: 30px 0;
+  margin-top: 100px;
+  background-color: #f8f8f8;
 
 }
 
-.App-link {
-  color: #61dafb;
-  &:hover {
-    color: bisque;
-  }
-  @extend%border_bot
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//%border_bot {
+//  font-size: 90px;
+//  border-bottom: 10px solid green;
+//}
+//
+//@mixin fontEasy($f, $d) {
+//
+//  font-size: $f;
+//  color: $d;
+//}
+//
+//.border_bottom {
+//  font-size: 90px;
+//  border-bottom: 10px solid green;
+//}
+//
+//.App {
+//  text-align: center;
+//  background-color: white;
+//
+//}
+//
+//.App-logo {
+//  height: 40vmin;
+//  pointer-events: none;
+//  width: 600 / 1200 * 100%;
+//
+//}
+//
+//@media (prefers-reduced-motion: no-preference) {
+//  .App-logo {
+//    animation: App-logo-spin infinite 20s linear;
+//  }
+//}
+//
+//.App-header {
+//  background-color: #282c34;
+//  min-height: 100vh;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: center;
+//  font-size: calc(10px + 2vmin);
+//  color: white;
+//
+//  p {
+//   @include fontEasy(100px, red)
+//  }
+//
+//  @extend .border_bottom
+//
+//}
+//
+//.App-link {
+//  color: #61dafb;
+//  &:hover {
+//    color: bisque;
+//  }
+//  @extend%border_bot
+//}
+//
+//@keyframes App-logo-spin {
+//  from {
+//    transform: rotate(0deg);
+//  }
+//  to {
+//    transform: rotate(360deg);
+//  }
+//}
+
+

@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding-top: 170px;
+}
+
+.social__item {
+  display: flex;
+
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+  transition: background .3s linear;
+  margin: 0 5px;
+  padding: 8px 8px;
+  border-radius: 2px;
+
+
+}
+
+.social__item:hover {
+  background-color: #c0301c;
+}
+
+.social__item__footer {
+  &:hover {
+    fill: #c0301c;
+    background-color: #FFFFFF;
+  }
+}
+
+.social--2 {
+  margin-bottom: 20px;
+  padding: 0;
+}

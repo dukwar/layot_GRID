@@ -1,0 +1,36 @@
+.btn {
+  margin-top: 50px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 14px 48px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .3s linear;
+
+}
+
+.btn:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+.btn-col {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  max-width: 180px;
+
+  &:hover {
+    color: #d16c5f;
+  }
+
+}

@@ -1,0 +1,59 @@
+@import "../../helpersSCSS/Container";
+
+.works {
+  flex-wrap: wrap;
+
+  .works__inner {
+    width: 100%;
+    display: flex;
+  }
+
+  .works__item {
+    width: 390 / 1200 * 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 14px;
+  }
+
+  .works__title {
+    color: #555555;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 28px;
+  }
+
+  .works__text {
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 15px;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .works__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background-color: #c0301c;
+    border: 2px solid #dddddd;
+    border-radius: 100px;
+  }
+
+  .works__icon {
+
+  }
+
+  .img-2-3 {
+    background-color: #ffffff;
+  }
+
+  @extend .container
+}
