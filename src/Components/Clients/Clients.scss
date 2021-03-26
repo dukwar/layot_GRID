@@ -3,14 +3,15 @@
 .Clients {
   width: 100%;
   background-color: #f8f8f8;
-  height: 400px;
+  height: auto;
+  padding-bottom: 200px;
 
   .clients__inner {
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
 
     .clients__item {
-      padding-top: 114px;
       background-color: #f8f8f8;
 
     }
@@ -29,8 +30,6 @@
     }
 
     .clients__text__inner {
-      margin: 0 auto;
-      width: 763px;
 
     }
   }
