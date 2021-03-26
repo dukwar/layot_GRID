@@ -1,10 +1,30 @@
+%border_bot {
+  font-size: 90px;
+  border-bottom: 10px solid green;
+}
+
+@mixin fontEasy($f, $d) {
+
+  font-size: $f;
+  color: $d;
+}
+
+.border_bottom {
+  font-size: 90px;
+  border-bottom: 10px solid green;
+}
+
 .App {
   text-align: center;
+  background-color: white;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  width: 600 / 1200 * 100%;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,10 +42,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  p {
+   @include fontEasy(100px, red)
+  }
+
+  @extend .border_bottom
+
 }
 
 .App-link {
   color: #61dafb;
+  &:hover {
+    color: bisque;
+  }
+  @extend%border_bot
 }
 
 @keyframes App-logo-spin {
