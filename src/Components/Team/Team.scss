@@ -9,26 +9,50 @@
   .team__inner {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     .team__item {
-      width: 33.33333%;
+      width: 250px;
       height: 250px;
       text-align: center;
       position: relative;
-      margin: 0 15px;
+      margin: 50px 5px;
 
-      .team__photo {
-        max-width: 100%;
-        height: 250px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-      }
 
       .team__link {
         width: 100%;
         height: 100%;
+
+
+        .team__photo {
+
+          max-width: 100%;
+          height: 250px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 1;
+        }
+
+        .team__content {
+          width: inherit;
+          height: inherit;
+          background-color: rgba(0, 0, 0, 0.3);
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 3;
+          transition: opacity 0.3s linear;
+          cursor: pointer;
+
+          @import "../../helpersSCSS/Social";
+
+          &:hover {
+            opacity: 1;
+          }
+
+        }
       }
 
       .team__name {
@@ -47,35 +71,9 @@
         font-weight: 500;
         line-height: 24px;
       }
-
-      .team__content {
-        width: inherit;
-        height: inherit;
-        background-color: rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 3;
-        transition: opacity 0.3s linear;
-        cursor: pointer;
-
-        @import "../../helpersSCSS/Social";
-
-        &:hover {
-          opacity: 1;
-        }
-
-      }
-
     }
-
     @extend .container
-
   }
-
-
-
 }
 
 

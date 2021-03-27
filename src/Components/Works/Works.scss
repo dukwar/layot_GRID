@@ -57,3 +57,17 @@
 
   @extend .container
 }
+
+
+@media (max-width: 720px) {
+  .works .works__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .works .works__inner .works__item {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

@@ -22,9 +22,10 @@
 
     .sentense__title {
       text-align: center;
+      font-size: 40px;
 
       .sentense__text {
-        font-size: 40px;
+
         font-weight: 400;
         line-height: 44px;
         color: #ffffff;
@@ -32,7 +33,6 @@
 
       }
       .sentense__text-2 {
-        font-size: 40px;
         font-weight: 400;
         line-height: 44px;
         color: #ffffff;
@@ -44,4 +44,12 @@
 
 
   }
+}
+
+@media (max-width: 600px) {
+  .sentense .sentense__inner .sentense__title {
+    font-size: 25px;
+  }
+
+
 }

@@ -15,29 +15,47 @@
     height: 770px;;
     background-color: rgba(0, 0, 0, .5);
 
+    .intro__inner {
+      text-align: center;
+      margin: 40px auto 0;
+
+
+      .intro__title {
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 35px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+      }
+
+      .intro__text {
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+    }
+
   }
 
-  .intro__inner {
-    text-align: center;
-    margin: 40px auto 0;
-  }
 
-  .intro__title {
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 24px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-  }
 
-  .intro__text {
-    font-family: 'Roboto Slab', serif;
-    font-size: 20px;
-    font-weight: 300;
-    color: #ffffff;
-  }
+
+
+
 
   @import "../../helpersSCSS/btn";
+}
+
+@media (max-width: 605px) {
+  .intro .intro__color .intro__inner .intro__title {
+    font-size: 30px;
+
+  }
+  .intro .intro__color .intro__inner .intro__text {
+    font-size: 15px;
+  }
+
 }

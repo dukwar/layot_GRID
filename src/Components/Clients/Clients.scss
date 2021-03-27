@@ -10,6 +10,7 @@
     padding-top: 100px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .clients__item {
       background-color: #f8f8f8;
@@ -37,6 +38,16 @@
 
 }
 
+
+@media (max-width: 605px) {
+  .intro .intro__color .intro__inner .intro__title {
+    font-size: 30px;
+  }
+  .intro .intro__color .intro__inner .intro__text {
+    font-size: 15px;
+  }
+
+}
 
 
 

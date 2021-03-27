@@ -16,8 +16,8 @@
       position: relative;
       overflow: hidden;
 
-      border-bottom: 10px solid #fff;
-      border-left: 10px solid #fff;
+
+      border: 10px solid #fff;
 
       .latest__image {
         position: absolute;
@@ -32,8 +32,7 @@
       }
 
       .late__works__content {
-
-        width: 100%;
+       width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -72,17 +71,25 @@
         @import "../../helpersSCSS/btn";
 
       }
-
-
-
-
-
     }
-
-
   }
 }
 
+
+@media (max-width: 1000px) {
+  .late__works .late__works__inner .late__works__item {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .late__works .late__works__inner .late__works__item {
+    width: 100%;
+  }
+
+}
 
 
 
